@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { motion as m, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
+import smallLogo from '../assets/logo.png';
+import landingPageLogo from '../assets/landing-page-logo.png';
+import exploreImage from '../assets/Explore.png';
 import './LandingPage.css';
 
 const LandingPage = () => {
@@ -29,7 +32,7 @@ const LandingPage = () => {
             exit={{ opacity:0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <img src="src\assets\logo.png" alt="" height={80} />
+            <img src={smallLogo} alt="" height={80} />
           </m.div>
         )}
       </AnimatePresence>
@@ -43,11 +46,11 @@ const LandingPage = () => {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <div className="landing-page-img-container">
-              <img src="src/assets/landing-page-logo.png" />
+              <img src={landingPageLogo} />
             </div>
             <div>
               <button className="landing-page-btn-container" onClick={handleClick}>
-                <img src="src/assets/explore.png" />
+                <img src={exploreImage} />
               </button>
             </div>
           </m.div>

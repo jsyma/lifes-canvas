@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 
+import smallLogo from '../assets/logo.png';
+import landingPageLogo from '../assets/landing-page-logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -35,8 +37,8 @@ const Navbar = () => {
     <div>
       <nav className={shouldAnimate ? "nav-bar animate" : "nav-bar"}>
       <NavLink>
-        <img className="navigation-logo" src="src/assets/landing-page-logo.png" height="50px" onClick={handleIconClick}/>
-        <img className="navigation-logo-small" src="src\assets\logo.png" height="30px" onClick={handleIconClick} />
+        <img className="navigation-logo" src={landingPageLogo} height="50px" onClick={handleIconClick}/>
+        <img className="navigation-logo-small" src={smallLogo} height="30px" onClick={handleIconClick} />
       </NavLink>
           <button className="button nav-ourshop" onClick={handleShopIconClick}>
             <span>Visit Our Shop!</span>

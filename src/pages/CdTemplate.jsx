@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import clickMe from '../assets/Click-Me.png';
+import clickHere from '../assets/Click-Here.png';
 import './TemplateStyles.css';
 import './CdTemplate.css';
 
@@ -40,7 +42,7 @@ const CdTemplate = () => {
         <Navbar />
         <div className="cd-template-title">Explore our CD Template</div>
         <div>        
-          <img className={`click-me ${isClicked ? 'hidden' : ''}`} src="src/assets/Click-Me.png" height="40px"/>
+          <img className={`click-me ${isClicked ? 'hidden' : ''}`} src={clickMe} height="40px"/>
         </div>
         <div className="cd-image-container">
           <div className={`cd-image-wrapper ${isClicked ? 'spin' : ''} initial-position`}>
@@ -59,7 +61,7 @@ const CdTemplate = () => {
           </div>
           </div>
         </div>
-        <img className={`click-here ${isClicked ? 'hidden' : ''}`} src="src/assets/Click-Here.png" height="50px" width="70px"/>
+        <img className={`click-here ${isClicked ? 'hidden' : ''}`} src={clickHere} height="50px" width="70px"/>
         <div className="see-more"> 
           <button className="previous" onClick={(handleBackClick)}>← View Timeless Memories</button>
           <button className="next" onClick={(handleNextClick)}>Check out the Bonus Track! →</button>
