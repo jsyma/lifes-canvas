@@ -16,9 +16,9 @@ const Footer = () => {
 
   return (
     <div className="footer">
-        Connect with us on social media:
-      <img src={tiktokLogo} height="50px" alt="Tiktok Logo" onClick={handleTiktokClick}/>
-      <img src={instagramLogo} height="50px" alt="Instagram Logo" onClick={handleInstagramClick}/>
+      <p>Connect with us on social media:</p> 
+      <img src={tiktokLogo} alt="Tiktok Logo" onClick={handleTiktokClick}/>
+      <img src={instagramLogo} alt="Instagram Logo" onClick={handleInstagramClick}/>
     </div>
   )
 }

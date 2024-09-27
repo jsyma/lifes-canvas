@@ -53,7 +53,7 @@ const EmailForm = () => {
     
     if (isValidForm) {
       try {
-        const res = await axios.post('http://localhost:8000/contactus', data);
+        const res = await axios.post('api/contactus', data);
         console.log(res.data);
         if (res.data.success) {
             Swal.fire({

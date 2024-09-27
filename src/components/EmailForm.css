@@ -67,6 +67,7 @@ textarea::placeholder {
   background-color: var(--primary-color);
   border: 2px solid var(--darkbrown);
   overflow: hidden; 
+  color: black;
   z-index: 1;
 }
 
