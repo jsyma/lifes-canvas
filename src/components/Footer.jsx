@@ -1,7 +1,7 @@
 import React from 'react';
 
-import tiktokLogo from '../assets/Tiktok-logo.png';
-import instagramLogo from '../assets/Instagram-logo.png';
+import tiktokLogo from '../assets/Tiktok-Logo.png';
+import instagramLogo from '../assets/Instagram-Logo.png';
 import './Footer.css';
 
 const Footer = () => {
