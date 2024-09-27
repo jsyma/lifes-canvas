@@ -1,0 +1,111 @@
+/*****************
+ * CSS Variables *
+ *****************/
+
+:root {
+  --primary-color: bisque; 
+  --lightbrown: rgb(223, 185, 139);
+  --darkbrown: rgb(207, 171, 127);
+  --errorcolor: rgb(223, 8, 8);
+  --etsybuttoncolor: rgb(255, 191, 150);
+  --etsycolor: rgb(235, 109, 32);
+  --spotifycolor: rgb(29,185,84);
+  --darkgreen: rgb(15, 117, 51);
+  --mockupbuttoncolor: rgb(193, 218, 255);
+  --mockupcolor: rgb(0, 123, 194);
+  --primary-font: "montserrat", sans-serif;
+  --secondary-font: "Satisfy", "montserrat";
+  --swiper-navigation-color: rgb(54, 31, 10);
+  --swiper-pagination-color: black;
+}
+
+/*********************
+ * Scrollbar Styling *
+ *********************/
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/*****************
+ * Global Styles *
+ *****************/
+
+html, body {
+  height: auto;
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  overflow: auto;
+}
+
+/**************
+ * Animations *
+ **************/
+
+@keyframes bounceInRight {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  60% {
+      transform: translateX(-35px);
+      opacity: 1;
+  }
+  80% {
+      transform: translateX(15px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearOnPage {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 100;
+  }
+}
+  
+@keyframes spinAndMoveLeft {
+  0% {
+    transform: translateX(50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(5%) rotate(-360deg) scale(0.9) translateY(-10%);
+  }
+}
+
+
+@media (max-width: 860px) {
+  @keyframes spinAndMoveLeft {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-5%) rotate(-180deg) scale(0.7);
+    }
+    100% {
+      transform: translateY(-10%) rotate(-360deg) scale(0.8);
+  }
+}
+}

@@ -1,0 +1,144 @@
+/* Swiper Styling */
+
+.swiper {
+  width: 300px;
+  height: 420px;
+  padding: 0px 70px 0px 70px;
+}
+  
+@media (max-width: 480px) {
+  .swiper {
+    width: 200px;
+    height:280px;
+  }
+}
+  
+@media (min-width: 480px) and (max-width: 760px) {
+  .swiper {
+    width: 250px;
+    height:350px;
+  }
+}
+  
+.swiper-slide {
+  border-radius: 18px;
+}
+  
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Template and Text Styling */ 
+
+.template-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--lightbrown);
+  padding: 1em;
+  flex: 1;
+  height: 100%;   
+}
+
+.template-description {
+  margin-top: 30px;
+  text-align: center; 
+  font-size: 22px;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+  
+.template-description p{
+  text-align: center; 
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+  
+@media (max-width: 480px) { 
+  .template-description p {
+    font-size: 14px;
+  }
+}
+
+/* Button Styling */
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+  
+.find-yours-on-etsy {
+  padding: 10px;
+  width: 150px;
+  margin-top: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--etsybuttoncolor);
+  border: 3px solid var(--etsycolor);
+  transition: background-color 0.5s ease-out, transform 0.5s ease, color 0.5s ease;
+  font-family: var(--primary-font);
+}
+  
+.find-yours-on-etsy:hover {
+  background-color: var(--etsycolor);
+  transform: scale(1.1);
+  color: white;
+}
+
+.browse-mockups {
+  padding: 10px;
+  width: 150px;
+  margin-top: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--mockupbuttoncolor);
+  border: 3px solid var(--mockupcolor);
+  transition: background-color 0.5s ease-out, transform 0.5s ease, color 0.5s ease;
+  font-family: var(--primary-font);
+}
+
+.browse-mockups:hover {
+  background-color: var(--mockupcolor);
+  transform: scale(1.1);
+  color: white;
+}
+
+.see-more {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--lightbrown);
+}
+
+.see-more button {
+  font-family: var(--secondary-font);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .see-more button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 300px) {
+  .see-more button {
+    font-size: 16px;
+  }
+}
+
+.see-more button.next, button.previous {
+  background-color: transparent;
+  border: 0px;
+}

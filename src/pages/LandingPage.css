@@ -1,0 +1,52 @@
+/* Landing Page */
+
+.landing-page-wrapper {
+    display: flex;         
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
+    text-align: center;     
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .landing-page-img-container img {
+    text-align: center;
+    display: inline-block;
+    max-width: 80%;
+    height: auto;
+    animation: bounceInRight 1s cubic-bezier(0.01, 0, 0.01, 0) forwards;
+  }
+  
+  .landing-page-btn-container {
+    display: inline-block;
+    border: none;
+    background: none;
+    border-radius: 60%;
+    max-width: 40%;
+    transition-duration: 0.5s;
+    animation: appearOnPage 1s ease-in;
+    
+  }
+    
+  .landing-page-btn-container img {
+    max-width: 80%;
+    padding: 1.5em;
+    padding-top: 2em;
+  }
+  
+  .landing-page-btn-container:hover {
+    background-color: var(--darkbrown);
+    transform: scale(1.1);
+  }
+  
+  .logo {
+    display: flex;
+    padding: 1em;
+    animation: appearOnPage 2s ease;
+  }

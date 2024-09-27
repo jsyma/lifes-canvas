@@ -1,0 +1,17 @@
+/* Mockup Page */ 
+
+.mockup-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.mockup-container {
+    display: flex;
+    flex: 1;
+    background-color: var(--lightbrown);
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}

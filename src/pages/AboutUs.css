@@ -1,0 +1,155 @@
+/* About Us Page */
+
+.about-us-wrapper {
+    padding: 1em;
+    display: flexbox;
+    overflow-y: auto;  
+  }
+  
+  @media (max-width: 480px) { 
+    .about-us-wrapper {
+      padding: 5px;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 760px) { 
+    .about-us-wrapper {
+      padding: 10px;
+    }
+  }
+  
+  .about-us-title {
+    background-color: var(--darkbrown);
+    padding: 1.5em;
+    font-size: 160%;
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) { 
+    .about-us-title {
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 760px) { 
+    .about-us-title {
+      padding: 25px;
+      font-size: 25px;
+    }
+  }
+  
+  .our-story {
+    padding-top: 2em;
+    padding-bottom: 3em;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    line-height: 2.5;
+  }
+  
+  @media (max-width: 480px) { 
+    .our-story {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 760px) { 
+    .our-story {
+      font-size: 16px;
+    }
+  }
+  
+  .about-us-owners {
+    background-color: var(--lightbrown);
+    padding: 2em;
+    font-size: 120%;
+    display: inline-flex;
+    animation: appearOnPage 1s ease-in;
+  }
+  
+  @media (max-width: 480px) { 
+    .about-us-owners {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 760px) { 
+    .about-us-owners {
+      font-size: 18px;
+    }
+  }
+  
+  .owner img {
+    width: 120px; 
+    height:120px;  
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    display: inline-block;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    animation: slideInLeft 1.5s ease;
+  }
+  
+  @media (max-width: 480px) { 
+    .owner img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 760px) { 
+    .owner img {
+      width: 110px;
+      height: 110px;
+    }
+  }
+  
+  .owner {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    padding: 1em;
+  }
+  
+  .owner-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 480px) { 
+    .owner-icon {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 760px) { 
+    .owner-icon {
+      font-size: 16px;
+    }
+  }
+  
+  .owner-description {
+    font-size: 18px;
+    margin-left: 10%;
+    text-align: center;
+    animation: appearOnPage 1s ease-in;
+  }
+  
+  
+  @media (max-width: 480px) { 
+    .owner-description {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 760px) { 
+    .owner-description {
+      font-size: 16px;
+    }
+  }

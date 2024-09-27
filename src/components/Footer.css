@@ -1,0 +1,31 @@
+/* Footer Component */
+
+.footer {
+    margin-top: auto;
+    display: flex;
+    gap: 50px;
+    align-items:center;
+    justify-content: center;
+    width: 100vw;
+    padding: 0.5em;
+    font-family: var(--primary-font);
+    animation: appearOnPage 1s ease;
+    background-color: var(--primary-color);
+  
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      gap: 20px;
+      font-size: 14px;
+    }
+  }
+  
+  .footer img {
+    transition: transform 0.6s; 
+    cursor: pointer;
+  }
+  
+  .footer img:hover {
+    transform: scale(1.2);
+  }

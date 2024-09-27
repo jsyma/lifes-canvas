@@ -1,0 +1,15 @@
+/* Single Print Page */
+
+.single-print-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.single-print-title {
+  font-size: 150%;
+  padding: 1.5em;
+  text-align: center;
+  background-color: var(--lightbrown);
+}

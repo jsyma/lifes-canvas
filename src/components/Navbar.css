@@ -1,0 +1,129 @@
+/* Navbar Component*/
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    height: 100%;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+  }
+  
+  .nav-bar.animate{
+    animation: appearOnPage 1.5s;
+  }
+  
+  .navigation-logo {
+    transition: transform 0.3s ease-in;
+  }
+  
+  .navigation-logo:hover {
+    transform: scale(1.05);
+  }
+
+  .navigation-logo-small {
+    display: none;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+  .nav-ourshop {
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.4s linear;
+  }
+
+  .nav-ourshop:hover {
+    background-color: var(--darkbrown);
+  }
+  
+  .nav-aboutus {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.4s linear;
+  }
+  
+  .nav-aboutus:hover {
+    background-color: var(--darkbrown);
+  }
+  
+  .nav-contactus {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.4s linear;
+  }
+  
+  .nav-contactus:hover {
+    background-color: var(--darkbrown);
+  }
+
+  @media (max-width: 650px) {
+    .navigation-logo {
+      display: none;
+    }
+    
+    .navigation-logo-small {
+      display: flex; 
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    .nav-bar {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .navigation-logo-small {
+      height: 40px;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 768px) {
+    .button {
+      font-size: 14px;
+      margin-right: 5px;
+      padding: 5px 10px;
+    }
+  }
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    .button {
+      font-size: 12px;
+      margin-right: 3px;
+      padding: 5px 10px;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .button {
+      font-size: 11px;
+      margin-right: 3px;
+      padding: 2px 2px;
+      border-radius: 3px;
+    }
+  }

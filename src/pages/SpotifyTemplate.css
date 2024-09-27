@@ -1,0 +1,31 @@
+/* Spotify Template Page */
+
+.spotify-template-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.spotify-template-title {
+  font-size: 150%;
+  padding: 1.5em;
+  text-align: center;
+  background-color: var(--lightbrown);
+  color: rgb(33,33,33);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 
+  -1px -1px 0 var(--spotifycolor),  
+   1px -1px 0 var(--spotifycolor),
+  -1px  1px 0 var(--spotifycolor),
+   1px  1px 0 var(--spotifycolor),
+   0  0 3px var(--spotifycolor);
+}
+
+@media (max-width: 768px) {
+  .spotify-template-title {
+    font-size: 20px;
+  }
+}

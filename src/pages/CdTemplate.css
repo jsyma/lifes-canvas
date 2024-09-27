@@ -1,0 +1,166 @@
+/* Cd Template Page */
+
+.cd-template-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--lightbrown);
+
+}
+
+.cd-template-title {
+  font-size: 150%;
+  padding: 1.5em 1.5em 5px 1.5em;
+  text-align: center;
+  background-color: var(--lightbrown);
+}
+
+.cd-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: visible;
+  position: relative;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+
+
+@media (max-width: 860px) {
+  .cd-image-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 860px) {
+  .initial-position {
+    transform: translate(50%);
+    cursor: pointer;
+    position: relative;
+    z-index: 60;
+    }
+}
+
+.cd-image-wrapper {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  transition: transform 2s ease-in-out; 
+}
+
+.cd-image-container img {
+  cursor: pointer;
+  position: relative;
+  z-index: 60;
+}
+
+@media (min-width: 1200px) {
+  .cd-image-container img {
+    max-height: 600px;
+  }
+}
+
+@media (min-width: 860px) and (max-width: 1200px) {
+  .cd-image-container img {
+    max-height: 500px;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 1000px) {
+  .cd-image-container img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cd-image-container img {
+    max-height: 300px;
+  }
+}
+
+.cd-template-description {
+  opacity: 0;
+  transition: opacity 1s ease-out; 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  }
+
+.cd-template-description.show {
+    opacity: 1;
+    transition-delay: 2s;
+}
+
+.cd-template-description p{
+    padding: 0em 2em 0em 2em;
+  }
+  
+
+.spin {
+  animation: spinAndMoveLeft 3s ease forwards;
+}
+
+.click-here {
+  display: flex;
+  opacity: 0;
+  left: 30vw;
+  pointer-events: none; 
+  position: relative;
+  transition: opacity 0.5s ease;
+  z-index: 3;
+  padding-bottom: 10px;
+}
+
+.click-here.hidden {
+  opacity: 0;
+}
+
+@media (min-width: 860px) {
+  .click-here {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 860px) {
+  .click-here {
+    display: none;  
+  }
+}
+
+.click-me {
+  opacity: 0;
+  position: relative;
+  right: -65vw;
+  transition: opacity 0.5s ease;
+  pointer-events: none; 
+}
+
+.click-me.hidden {
+  opacity: 0;
+}
+
+@media (max-width: 860px) {
+  .click-me {
+    opacity: 1;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .click-me {
+    opacity: 1;
+    height: 30px;
+  }
+}

@@ -1,0 +1,52 @@
+/* Contact Us Page */
+
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+  }
+  
+  .contact-us-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    overflow-x: hidden;
+    flex: 1;
+  }
+  
+  @media (max-width: 480px) { 
+    .contact-us-wrapper {
+      padding: 5px;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 760px) { 
+    .contact-us-wrapper {
+      padding: 10px;
+    }
+  }
+  
+  .get-in-touch {
+    background-color: var(--darkbrown);
+    padding: 1.5em;
+    font-size: 160%;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  @media (max-width: 480px) { 
+    .get-in-touch {
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 760px) { 
+    .get-in-touch {
+      padding: 25px;
+      font-size: 25px;
+    }
+  }
