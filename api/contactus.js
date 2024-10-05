@@ -10,8 +10,8 @@ export default async function handler(req, res) {
     const { name, email, subject, message } = req.body;
 
     const msg = {
-      to: 'lifescanvasco@gmail.com',
-      from: 'lifescanvasco@gmail.com',
+      to: process.env.SENDGRID_TO_EMAIL,
+      from: process.env.SENDGRID_FROM_EMAIL,
       templateId: process.env.SENDGRID_TEMPLATE_ID,
       dynamic_template_data: {
         name,
