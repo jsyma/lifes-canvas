@@ -86,6 +86,7 @@
   border: 3px solid var(--etsycolor);
   transition: background-color 0.5s ease-out, transform 0.5s ease, color 0.5s ease;
   font-family: var(--primary-font);
+  color: black;
 }
   
 .find-yours-on-etsy:hover {
@@ -105,6 +106,7 @@
   border: 3px solid var(--mockupcolor);
   transition: background-color 0.5s ease-out, transform 0.5s ease, color 0.5s ease;
   font-family: var(--primary-font);
+  color: black;
 }
 
 .browse-mockups:hover {
