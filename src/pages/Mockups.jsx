@@ -1,15 +1,125 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import './TemplateStyles.css';
 import './Mockups.css';
 
 const Mockups = () => {
+  const navigate = useNavigate();
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSinglePrintClick = () => {
+    navigate('/singleprint');
+  };
+
+  const handleSpotifyTemplateClick = () => {
+    navigate('/spotifytemplate');
+  };
+
+  const handleCdTemplateClick = () => {
+    navigate('/cdtemplate');
+  };
+
+  const slides = [
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875330/ritd0j9vsmnrypjkangl.png',
+      title: 'Travel Mockup',
+      link: handleSinglePrintClick
+    },
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875329/klcjpmjiubh44l9eecqf.png',
+      title: 'Travel Mockup',
+      link: handleSinglePrintClick
+    },
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875466/opbznp5iphv85axc5dhh.png',
+      title: 'Birthday Mockup',
+      link: handleSinglePrintClick
+    },
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875465/mgdmcwe9tydtreggmitm.png',
+      title: 'Couples Mockup',
+      link: handleSinglePrintClick
+    },
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875471/m8rgwmutuohsn47ejk6z.png',
+      title: 'Couples Mockup',
+      link: handleSinglePrintClick
+    },
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875659/bos5lynzpg6qgbiqvgum.png',
+      title: 'Spotify Playlist Mockup',
+      link: handleSpotifyTemplateClick
+    },
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875667/xwcugpkq11p2iycrlaeg.png',
+      title: 'Spotify Playlist Mockup',
+      link: handleSpotifyTemplateClick
+    },
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875664/gz8dt2xj5lkamdppl2la.png',
+      title: 'Spotify Album Mockup',
+      link: handleSpotifyTemplateClick
+    },
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875915/yyztifrqmg9x6zmpfo2m.png',
+      title: 'CD Template Mockup',
+      link: handleCdTemplateClick
+    },
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875917/agrizckciwn7bix0ltp6.png',
+      title: 'CD Template Mockup',
+      link: handleCdTemplateClick
+    },
+    {
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875916/q1w8afdaewwgtdlk4gi2.png',
+      title: 'CD Template Mockup',
+      link: handleCdTemplateClick
+    }
+  ];
+    
   return (
     <div className="mockup-wrapper">
       <Navbar />
+      <div className="mockup-title">Explore our Mockups</div>
       <div className="mockup-container">
-        Mockups Coming Soon!
+        <Swiper
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={'auto'}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mockup-images"
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <img src={slide.image} alt="Mockup Photos" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="mockup-description-title">
+          <p>{slides[activeIndex].title}</p>
+          <button className="browse-mockups" style={{ width: '100px' }}onClick={slides[activeIndex].link}>
+            See More
+          </button>
+        </div>
       </div>
       <Footer />
     </div>
