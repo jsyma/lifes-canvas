@@ -60,27 +60,27 @@ const Mockups = () => {
       link: handleSpotifyTemplateClick
     },
     {
-      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875667/xwcugpkq11p2iycrlaeg.png',
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728881450/yblnzspfewsfcpq5gy9b.png',
       title: 'Spotify Playlist Mockup',
       link: handleSpotifyTemplateClick
     },
     {
-      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875664/gz8dt2xj5lkamdppl2la.png',
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728881451/l6nteobo45xnrrdtq4vz.png',
       title: 'Spotify Album Mockup',
       link: handleSpotifyTemplateClick
     },
     {
-      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875915/yyztifrqmg9x6zmpfo2m.png',
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728881447/znpobvly7rbjbp0kztqn.png',
       title: 'CD Template Mockup',
       link: handleCdTemplateClick
     },
     {
-      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875917/agrizckciwn7bix0ltp6.png',
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728881449/gl4viwdcjkdtttoywjxp.png',
       title: 'CD Template Mockup',
       link: handleCdTemplateClick
     },
     {
-      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728875916/q1w8afdaewwgtdlk4gi2.png',
+      image: 'https://res.cloudinary.com/dqgviyg1w/image/upload/v1728881448/qouseva3u1bqy4lrscvo.png',
       title: 'CD Template Mockup',
       link: handleCdTemplateClick
     }

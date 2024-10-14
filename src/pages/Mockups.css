@@ -32,6 +32,13 @@
   width: auto;
 }
 
+@media (max-width: 480px) {
+  .swiper-slide {
+    width: 250px;
+    height: auto;
+  }
+}
+
 .mockup-images img {
   max-width: 100%;
   height: auto;
